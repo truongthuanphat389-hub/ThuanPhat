@@ -1,0 +1,56 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNA+Eizb4Wq7bNvR/VBxph0",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/truongthuanphat389-hub/ThuanPhat/blob/main/BaiThucHanh2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "sykN4XAyGr5d"
+      },
+      "outputs": [],
+      "source": [
+        "import heapq\n",
+        "def get_manhattan_distance(state; goal):\n",
+        "  distance = 0\n",
+        "  for i in range(16)\n",
+        "      if state[i] != 0\n",
+        "          target_idx = goal.index(state[i])\n",
+        "          distance += abs(i // 4 - target_idx // 4) + abs(i % 4 - target_idx % 4)\n",
+        "  return distance\n",
+        "def solve_15_puzzle(start_state, goal_state):\n",
+        "  pq = [(get_manhattan_distance(start_state, goal_state), start_state, [])]\n",
+        "  visited = set()\n",
+        "\n",
+        "while pq:\n",
+        "  h, current, path = heapq.heappop(pq)\n",
+        "  if current == goal_state:\n",
+        "    return\n"
+      ]
+    }
+  ]
+}
